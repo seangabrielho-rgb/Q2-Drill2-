@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Club Registration</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
+
+    <style>
+        body {
+        background-color: #0d081a;
+        color: #f3f0ff;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        }
+        .main-container {
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+        }
+
+
+        .btn-purple {
+            background: linear-gradient(135deg, #7e22ce 0%, #9333ea 100%);
+            color: #ffffff;
+            font-weight: 60022;
+        }
+        .btn-purple:hover {
+         background: linear-gradient(135deg, #6b21a8 0%, #7e22ce 100%);
+         color: #ffffff;
+        }
+        .result-box {
+     display: flex;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+        }
+        .result-text {
+         color: #e9d5ff;
+         font-weight: 600;
+         font-size: 1.05rem;
+        }
+        footer {
+         background-color: #120a22;
+         border-top: 1px solid #281442;
+         color: #8b5cf6;
+         text-align: center;
+         padding: 14px 0;
+         font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="text-center mb-4">
+        <h2 class="app-title mb-1">ICT NEW CLUB MEMBER</h2>
+        </div>
+        <div class="card-custom mb-4">
+        <div class="mb-3">
+        <input type="text" id="fname" class="form-control form-control-custom" placeholder="First Name">
+        </div>
+        <div class="mb-3">
+        <input type="text" id="lname" class="form-control form-control-custom" placeholder="Last Name">
+        </div>
+        <button id="btn-submit" class="btn btn-purple w-100">Get in NOW!</button>
+        </div>
+        <div class="result-box mb-4">
+        <div id="result" class="result-text">Enter your first and last name to join the club alread cmon</div>
+        </div>
+        <div class="members-card text-center">
+         <strong id="member-count" class="d-block mb-1 text-uppercase" style="letter-spacing: 1px;">Official Club Members: 5 STUDENTS</strong>
+        <span id="members-list"></span>
+        </div>
+    </div>
+    <footer>
+        &copy; 2026 ICT Club &bull; Seatwork 2 &bull; 2nd Quarter
+    </footer>
+    <script type="py" src="main.py" config='{"packages": []}'></script>
+
+</body>
+</html>
